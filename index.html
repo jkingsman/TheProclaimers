@@ -24,7 +24,6 @@
             z-index: 1;
             bottom: 50px;
             background: azure;
-            height: 100px;
             width: 400px;
             margin-left: 30px;
             padding: 10px;
@@ -48,8 +47,9 @@
 <body>
     <span id="title">The Proclaimers: HTML5 Geographic APIs and Megamile Range Finding</span>
     <div id="info">
-        <span style="color: purple;">Purple</span> covers 500 miles from your current location<br />
-        <span style="color: red;">Red</span> covers 500 more to indicate the outer radius of The Proclaimers' possible placement to fall down at your door.
+        <span style="color: purple;">Purple</span> covers 500 miles from your current location.<br />
+        <span style="color: red;">Red</span> covers 500 more to indicate the outer radius of The Proclaimers' possible placement to fall down at your door.<br />
+        <a href="#" onclick="document.getElementById('500miles').pause();" style="color: red;">Stop the music!!</a>
     </div>
     <div id="map">
     </div>
@@ -100,7 +100,7 @@
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ_ngjNFL25FN-lu9khmDARgaTKWmqeYg&callback=initMap">
     </script>
-    <audio autoplay="true" src="500miles.mp3">
+    <audio id="500miles" autoplay="true" src="500miles.mp3">
 </body>
 
 </html>
