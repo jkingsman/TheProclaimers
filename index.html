@@ -95,11 +95,14 @@
                     center: centerObj,
                     radius: 1609344 // 1000 miles in meters
                 });
-            }, null, {enableHighAccuracy: false});
+            }, console.log, {enableHighAccuracy: false});
         }
+        
+    // fallback
+    setTimeout(initMap, 3000);
     </script>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ_ngjNFL25FN-lu9khmDARgaTKWmqeYg&callback=initMap">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ_ngjNFL25FN-lu9khmDARgaTKWmqeYg&callback=initMap">
     </script>
     <audio id="500miles" autoplay="true" src="500miles.mp3">
 </body>
