@@ -95,7 +95,7 @@
                     center: centerObj,
                     radius: 1609344 // 1000 miles in meters
                 });
-            }, console.log, {enableHighAccuracy: false});
+            }, console.log, {enableHighAccuracy: false, timeout: 5000, maximumAge: 0});
         }
         
     // fallback
